@@ -1,4 +1,12 @@
 mes = input()
+if len(mes) > 7:
+    print('Вы ввели последовательность, длиной больше 7, повторите ввод:')
+    mes = input()
+for i in range(len(mes)):
+    if mes[i] != '0' and mes[i] != '1':
+        print('Вы ввели некорректную последовательность, повторите ввод:')
+        mes = input()
+        break
 r1 = mes[0]
 r2 = mes[1]
 i1 = mes[2]
